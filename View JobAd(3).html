@@ -60,9 +60,9 @@
           <h2 class="card-event-title">New Job details</h2>
           <form class="row g-3 text-center">
                   <div class="picture">              
-                      <input type="file" id="addImage" class="form-control" 
+                      <input type="file" id="c3Image" class="form-control" 
                           onchange="document.getElementById('addImagePreview').src = window.URL.createObjectURL(this.files[0])">
-                      <img src="office-building.png" class="card-img-left" id="addImagePreview" alt="add image preview" width="259" height="259">
+                      <img src="c3.jpg" class="card-img-left" id="addImagePreview" alt="add image preview" width="259" height="259">
                     </div>
             <div class="row">
               <div class="col-md-6">
@@ -106,8 +106,8 @@
       </div>
       
               <div class="col text-center">
-                <button type="button" class="btn btn-delete text-white">Delete</button>
-                <button type="button" class="btn btn-update text-white">Update</button>
+                <button type="button" class="btn btn-delete text-white" id="btnDelete" href="#">Delete</button>
+                <button type="button" class="btn btn-update text-white" id="btnUpdate" href="#">Update</button>
               </div></div>
 
     <footer class="footer mt-auto py-0 text-white">
@@ -141,12 +141,12 @@
 
             $("#inputDesc").val(desc);
             
-            $("input").attr("disabled", true);
-            $("textarea").attr("disabled", true);
-            $("file").attr("disabled", true);
+            $("input").attr("enable", true);
+            $("textarea").attr("enable", true);
+            $("file").attr("enable", true);
         });
 
-        $("#btnEdit").on("click", function () {
+        $("#btnDelete").on("click", function () {
             $("input").attr("disabled", false);
             $("textarea").attr("disabled", false);
             $("file").attr("disabled", false);
