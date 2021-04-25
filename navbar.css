@@ -1,0 +1,62 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    border-bottom: 3px solid #b916c7;
+    background-color: white;
+}
+
+.btn{
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+      
+}
+
+.btn-login{
+    background-color: #a30fb0;
+    width: 132px;
+    height: 35px;
+    margin-right: 14px;
+}
+
+.btn-signup{
+    background-color: #03167c;
+    width: 132px;
+    height: 35px;
+    margin-right: 33px;
+}
+
+.btn-logout{
+    background-color: #a30fb0;
+    width: 132px;
+    height: 35px;
+    margin-right: 14px;
+}
+
+footer{
+    background-color: #a30fb0;
+    height: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.navbar .nav-item a{
+    color: #0000;
+}
+
+.input-group-add-on .form-control{
+    height: 1rem;
+}
+
+.input-group-btn .btn{
+    height: 2rem;
+    padding-left: 5px;
+}
+
+.navbar-form{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
